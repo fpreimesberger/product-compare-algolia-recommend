@@ -1,5 +1,5 @@
 {
-  "name": "recommend",
+  "name": "product-compare-algolia-recommend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
