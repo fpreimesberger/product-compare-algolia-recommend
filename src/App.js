@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useRecommendations } from "@algolia/recommend-react";
 import recommend from "@algolia/recommend";
 import ProductTile from "./components/ProductTile";
