@@ -16,4 +16,4 @@ npm install
 npm start
 ```
 
-3. Go to [localhost:4242](http://localhost:4242)
+3. Go to [localhost:3000](http://localhost:3000)
