@@ -14,10 +14,6 @@ const recommendClient = recommend(
 const indexName = "ecommerce";
 
 function App() {
-  useEffect(() => {
-    document.title = "Product Compare using Algolia Recommend";
-  }, []);
-
   const [item, changeItem] = useState(items[0]);
 
   const handleChangeItem = (event) => {

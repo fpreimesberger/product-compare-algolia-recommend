@@ -195,7 +195,6 @@ mark {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
-  /* /* margin: 1rem 0; */
 }
 
 .hit h1 {
@@ -229,7 +228,6 @@ mark {
   justify-content: center;
   margin: auto;
   width: 174px;
-  /* padding: 10px; */
 }
 
 .hit-image {

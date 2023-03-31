@@ -84,14 +84,6 @@ const CompareTable = (props) => {
             {props.recommendations.map((recommendation) => (
               <>
                 <td scope="col" key={recommendation.objectID}>
-                  {/* {recommendation.rating}
-                  {Array({ length: parseInt(recommendation.rating) }).map(
-                    (i) => (
-                      <span key={i}>
-                        <SlStar /> p
-                      </span>
-                    )
-                  )} */}
                   <span className="hit-em hit-rating">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
