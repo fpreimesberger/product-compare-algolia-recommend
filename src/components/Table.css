@@ -37,6 +37,7 @@ td {
   -webkit-font-smoothing: antialiased;
   align-items: center;
   padding: 0.5rem 1rem;
+  text-align: center;
 }
 
 table.table-bordered {
@@ -58,19 +59,14 @@ th {
   line-height: 1;
   margin-bottom: 8px;
   opacity: 0.7;
-  /* text-transform: uppercase; */
   line-height: 1;
   margin-bottom: 8px;
   opacity: 0.7;
-  /* text-transform: uppercase; */
 }
 .hit {
   color: #21243d;
   font-size: 14px;
   line-height: 18px;
-  /* width: 200px;
-    height: 200px; */
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,6 +75,12 @@ th {
 }
 
 h1 {
+  font-size: 14px;
+}
+
+.item-name {
+  color: black;
+  text-align: center;
   font-size: 14px;
 }
 
@@ -151,78 +153,10 @@ h1 {
   text-align: center;
 }
 
-.hits-empty-state .ais-ClearRefinements {
-  margin-top: 1rem;
-}
-
-.hits-empty-state .ais-ClearRefinements-button--disabled {
-  display: none;
-}
-
-.hits-empty-state .ais-ClearRefinements-button {
-  background: rgba(10, 8, 41, 0.04);
-  border-radius: 3px;
-  color: #21243d;
-  min-height: 48px;
-  padding: 16px 24px;
-}
-
-/* ToggleRefinement */
-
-.ais-ToggleRefinement-label {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
-
-.ais-ToggleRefinement-checkbox {
-  font: inherit;
-  margin-left: 1rem;
-  margin-right: 0;
-  position: relative;
-}
-
-.ais-ToggleRefinement-checkbox:checked::before {
-  color: #e2a400;
-}
-
-.ais-ToggleRefinement-checkbox::before {
-  align-items: center;
-  color: rgba(33, 36, 61, 0.32);
-  content: "No";
-  display: flex;
-  font-size: 0.8rem;
-  height: 16px;
-  position: absolute;
-  right: 38px;
-}
-
-.ais-ToggleRefinement-checkbox:checked::before {
-  content: "Yes";
-}
-
-.ais-ToggleRefinement-count {
-  display: none;
-}
-
-/* RatingMenu */
-
-.ais-RatingMenu-item:not(.ais-RatingMenu-item--selected) {
-  opacity: 0.5;
-}
-
-.ais-RatingMenu-starIcon {
-  margin-right: 0.5rem;
-}
-
 /* Hide all mobile-specific design on desktop */
 
 @media (min-width: 900px) {
   [data-layout="mobile"] {
     display: none;
   }
-}
-
-.shipping {
-  align-items: center;
 }

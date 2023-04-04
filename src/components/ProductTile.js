@@ -11,8 +11,10 @@ const ProductTile = (props) => {
       <div className="hit-info-container">
         <p className="hit-category">{props.categories[0]}</p>
         <h1>{props.name}</h1>
-        <p className="hit-description">{props.description}</p>
-
+        <p className="hit-description">
+          {props.description}{" "}
+          {props.cupCapacity && `Makes ${props.cupCapacity}.`}
+        </p>{" "}
         <footer>
           <p>
             <span className="hit-em">$</span> <strong>{props.price}</strong>{" "}

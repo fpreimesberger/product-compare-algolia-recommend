@@ -31,6 +31,10 @@ function App() {
 
   return (
     <div>
+      <header className="header">
+        <p className="header-title">Product Compare using Algolia Recommend</p>
+      </header>
+
       <div className="product-tile-wrapper">
         <ProductTile
           name={item.objectName}
@@ -40,6 +44,7 @@ function App() {
           description={item.objectDescr}
           rating={item.objectRating}
           shipping={item.objectFreeShipping}
+          cupCapacity={item.cupCapacity}
         />
       </div>
       <div className="button-wrapper">

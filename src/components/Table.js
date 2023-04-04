@@ -1,8 +1,8 @@
 import React from "react";
 import { SlCheck, SlClose } from "react-icons/sl";
-import { IconContext } from "react-icons";
 import Table from "react-bootstrap/Table";
 import "./Table.css";
+import "bootstrap/dist/css/bootstrap.css";
 
 const formatString = (str) => {
   const output = JSON.stringify(str).replace(/['"]+/g, "");
@@ -16,15 +16,18 @@ const CompareTable = (props) => {
         <h2>Compare to similar items</h2>
         <br />
       </header>
-      <Table striped hover>
+      <Table hover borderless>
         <thead className="border-light table-bordered">
           <tr>
             <th scope="row"></th>
 
             {props.recommendations.map((recommendation) => (
               <th scope="col" key={recommendation.objectID}>
-                <h1 style={{ color: "black" }}>
-                  {formatString(recommendation.name).split("-")[1]}
+                <h1 className="item-name">
+                  {formatString(recommendation.name)
+                    .split("-")
+                    .slice(0, 3)
+                    .join("-")}
                 </h1>
               </th>
             ))}
@@ -72,6 +75,26 @@ const CompareTable = (props) => {
                   .join(" ")}
                 {""}
                 ...
+              </td>
+            ))}
+          </tr>
+          {/* {props.recommendations[0].cupCapacity !== null && ( */}
+          <tr>
+            <th scope="row">System Memory</th>
+            {props.recommendations.map((recommendation) => (
+              <td scope="col" key={recommendation.objectID}>
+                {recommendation.memory}
+                {""}
+              </td>
+            ))}
+          </tr>
+          {/* )} */}
+          <tr>
+            <th scope="row">Hard Drive Capacity</th>
+            {props.recommendations.map((recommendation) => (
+              <td scope="col" key={recommendation.objectID}>
+                {recommendation.hardDrive}
+                {""}
               </td>
             ))}
           </tr>

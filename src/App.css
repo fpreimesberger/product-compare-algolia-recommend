@@ -13,15 +13,24 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  align-items: center;
+  background: linear-gradient(to bottom, #fbc300, #c98a00);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 150px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 48px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header-title {
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .App-link {
@@ -60,10 +69,7 @@
   font-size: 0.875rem;
   font-weight: bold;
   justify-content: center;
-  /* left: 10%; */
   padding: 0.5rem;
   min-height: 40px;
   min-width: 112px;
-  /* position: fixed; */
-  /* transform: translateX(150%); */
 }
